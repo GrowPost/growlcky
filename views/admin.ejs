@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    
+    <h2>Manage Users</h2>
+    <form action="/admin/add-balance" method="POST">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="number" name="amount" placeholder="Amount" required>
+        <button type="submit">Add Balance</button>
+    </form>
+
+    <form action="/admin/ban-user" method="POST">
+        <input type="text" name="username" placeholder="Username to Ban" required>
+        <button type="submit">Ban User</button>
+    </form>
+
+    <a href="/home">Back to Home</a>
+</body>
+</html>
